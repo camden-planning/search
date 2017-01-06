@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Planning application search</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://camden.gov.uk/ccm-ldn-theme/__ccm__/themes-prod/fc-sw2/images/icons/favicon.ico">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/override.css" rel="stylesheet">
+	<link href="css/planning.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- Start Container -->
+    <div class="container">
+	
+<!-- Start Header -->
+        <div class="row">
+          <div class="col-md-12">
+            <header>
+              <img src="images/headerLogo.png" class="img-responsive" alt="Camden Council">                      
+            </header>
+          </div>
+        </div>
+
+<!-- End Header -->
+      <div id="wrapper">
+
+<!-- Start Left Nav and Content Area -->
+        <div class="row">
+
+<!-- Start Content Area -->
+            <div class="col-md-12">
+
+<!-- Start Adding Rows for Content Area -->
+
+              <div class="row">
+  <div class="col-md-12">
+   <div class="page-header top-heading">
+      <header>
+       <h1><a href="planning-search.html">Find a planning application</a></h1>
+      </header>
+    </div>
+  </div>
+</div>
+
+<!-- Alpha banner -->
+<div class="row">
+  <div class="col-md-12">
+    <p class="alphapara"><span class="small"><strong class="alpha">ALPHA</strong>This is a new service - your <a href="https://survs.com/survey/titzn5hh9t">feedback</a> will help us improve it. You can still access the <a href="http://planningrecords.camden.gov.uk/Northgate/PlanningExplorer17/GeneralSearch.aspx">old service.</a></span></p>
+	<hr class="alphahr" />
+  </div>
+</div>
+<!-- end Alpha banner -->
+
+<div class="row">
+  <div class="col-md-12">
+   <div class="page-header">
+      <header style="background-color: #DFEEF5;">
+        <h2 id="heading" style="padding-left:0px;">Enter an application number, address or description</h2>
+      </header>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="instructiontext">
+  <div class="col-md-12">
+    <p>For example '2012/2356/P', 'Chalk farm road' or 'extension'</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-12">
+    <div class="form-fields">
+      <form role="form" action="planning-search.html" method="GET" name="searchbox">
+	    
+		<div class="row">
+		  <div class="col-sm-6 col-md-6">
+		    <div class="form-group">
+			  <input type="text" id="q" name="q" class="form-control">
+			</div>
+		  </div> 
+		</div>
+		
+		<div class="row" id = "exactcheckbox">
+		  <div class="col-sm-6 col-md-3">
+		    <div class="form-group">
+			  <div class="check-input">
+			    <label for="checkboxexact">
+				  <input type='checkbox' id='checkboxexact' onclick='checkboxtoggle()'>Exact phrase match
+				</label>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="row">
+		  <div class="col-sm-12 col-md-12">
+		    <button type="submit" value="Search" class="btn btn-primary btn-lg">Search</button>
+		  </div>
+		</div>
+	  </form>
+    </div>
+  </div>
+</div>
+
+<div id='loading'></div>
+<div id='results'></div>
+
+<!-- End Adding Rows for Content Area -->
+            </div>
+
+<!-- End Content Area -->
+          </div>
+
+<!-- End Left Nav and Content Area -->
+        </div>
+
+<!-- Start Footer -->
+        <div class="row">
+          <div class="col-md-12">
+             <footer>
+              <p class="pull-left"><img src="images/footerLogo.png" class="img-responsive" alt="Camden Council"></p>
+              <p class="pull-left copyright">Copyright &copy; 2016 <a href="http://www.camden.gov.uk/privacy" target="_blank">Disclaimer and privacy statement</a></p>
+            </footer>
+          </div>
+        </div>
+<!-- End Footer -->
+
+<!-- End Container -->
+
+      <!-- Bootstrap core JavaScript, Modernizr and general scripts
+      ================================================== -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/scripts.js"></script> 
+      <script src="js/jquery.tablesorter.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+	  <!-- planning search functionality -->
+	  <script src="js/planningsearch.js"></script>
+
+  </body>
+</html>
