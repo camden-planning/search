@@ -1,0 +1,58 @@
+
+	h1 a, h1 a:hover {
+	color: #333;
+	padding: 0px;
+	}
+	
+	#loading {
+    position: relative; width: 100%; height: 100%; background: url('../images/ajaxLoader.gif') no-repeat; display: none;
+    }
+	
+	ul.nav-pills li {
+	width: auto;
+	border: none;
+	border-radius: 4px;
+	}
+	
+	.nav-pills > li.active > a.no-cursor {
+	cursor: default;
+	}
+	
+	#expand-type-selector {
+	display:none;
+	}
+	
+	#expandfilter {
+	cursor: pointer;
+	}
+	
+	#exactcheckbox {
+	display: none;
+	}
+	
+	.alpha {
+	color: white;
+	background-color: #D53880;
+	margin-right: 8px;
+	padding: 2px 5px;
+	}
+	
+	.alphapara {
+	margin-bottom: 5px;
+	}
+	
+	.alphahr {
+	margin-top:0px;
+	}
+	
+	@media (max-width: 768px) {
+	ul.nav-pills li {
+	width: 100%;
+	}
+	#type-selector {
+	display:none;
+	}
+	#expand-type-selector {
+	display:block;
+	}
+	}
