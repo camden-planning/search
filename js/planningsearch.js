@@ -43,7 +43,7 @@ if(readsearchterm !== "undefined") {
 
 //check for blanks
 if (readsearchterm == "") {
-window.location.href = "planning-search.html";
+window.location.href = "index.html";
 }
 
 // loader while awaiting response from Socrata
@@ -147,22 +147,22 @@ function myFunction(response) {
 	if (type == "all") {
 	out += "<li class='active disabled'><a class='no-cursor'>All (" + arr_all.length + ")</a></li>";
 	} else {
-	out += "<li><a href='planning-search.html?q=" + readsearchtermurl + "&page=1&type=all" + exactfragment + "'>All (" + arr_all.length + ")</a></li>";
+	out += "<li><a href='index.html?q=" + readsearchtermurl + "&page=1&type=all" + exactfragment + "'>All (" + arr_all.length + ")</a></li>";
 	}
 	if (type == "new") {
 	out += "<li class='active disabled'><a class='no-cursor'>New applications (" + arr_new.length + ")</a></li>";
 	} else {
-	out += "<li><a href='planning-search.html?q=" + readsearchtermurl + "&page=1&type=new" + exactfragment + "'>New applications (" + arr_new.length + ")</a></li>";
+	out += "<li><a href='index.html?q=" + readsearchtermurl + "&page=1&type=new" + exactfragment + "'>New applications (" + arr_new.length + ")</a></li>";
 	}
 	if (type == "decision") {
 	out += "<li class='active disabled'><a class='no-cursor'>Decisions (" + arr_decision.length + ")</a></li>";
 	} else {
-	out += "<li><a href='planning-search.html?q=" + readsearchtermurl + "&page=1&type=decision" + exactfragment + "'>Decisions (" + arr_decision.length + ")</a></li>";
+	out += "<li><a href='index.html?q=" + readsearchtermurl + "&page=1&type=decision" + exactfragment + "'>Decisions (" + arr_decision.length + ")</a></li>";
 	}
 	if (type == "appeal") {
 	out += "<li class='active disabled'><a class='no-cursor'>Appeals (" + arr_appeal.length + ")</a></li>";
 	} else {
-	out += "<li><a href='planning-search.html?q=" + readsearchtermurl + "&page=1&type=appeal" + exactfragment + "'>Appeals (" + arr_appeal.length + ")</a></li>";
+	out += "<li><a href='index.html?q=" + readsearchtermurl + "&page=1&type=appeal" + exactfragment + "'>Appeals (" + arr_appeal.length + ")</a></li>";
 	}
 	out += "</ul> </div> </div>";
 	}
@@ -239,7 +239,7 @@ function myFunction(response) {
 	
 	// build the previous buttons
 	if (page > 1) {
-	out += " <li> <a href='planning-search.html?q=" + readsearchtermurl + "&page=1" + typefragment + exactfragment + "'> <span aria-hidden='true'> <img src='images/firstActive.png' width='16px' height='16px' alt='First page' /> </span> <span class='sr-only'>First page</span> </a> </li> <li> <a href='planning-search.html?q=" + readsearchtermurl + "&page=" + (page - 1) + typefragment + exactfragment + "'> <span aria-hidden='true'> <img src='images/previousActive.png' width='16px' height='16px' alt='Previous page' /> </span> <span class='sr-only'>Previous page</span> </a> </li> </ul> </li>";
+	out += " <li> <a href='index.html?q=" + readsearchtermurl + "&page=1" + typefragment + exactfragment + "'> <span aria-hidden='true'> <img src='images/firstActive.png' width='16px' height='16px' alt='First page' /> </span> <span class='sr-only'>First page</span> </a> </li> <li> <a href='index.html?q=" + readsearchtermurl + "&page=" + (page - 1) + typefragment + exactfragment + "'> <span aria-hidden='true'> <img src='images/previousActive.png' width='16px' height='16px' alt='Previous page' /> </span> <span class='sr-only'>Previous page</span> </a> </li> </ul> </li>";
 	} else {
 	out += "<li class='disabled'> <a> <span aria-hidden='true'> <img src='images/firstInactive.png' width='16px' height='16px' alt='First page' /> </span> <span class='sr-only'>First page</span> </a> </li> <li class='disabled'> <a> <span aria-hidden='true'> <img src='images/previousInactive.png' width='16px' height='16px' alt='Previous page' /> </span> <span class='sr-only'>Previous page</span> </a> </li> </ul> </li>";
 	}
@@ -254,7 +254,7 @@ function myFunction(response) {
 	if ((j+1) == page) {
 	out += "<li class='active'>" + (j+1) + "</li> ";
 	} else {
-	out += "<li><a href='planning-search.html?q=" + readsearchtermurl + "&page=" + (j + 1) + typefragment + exactfragment + "'>" + (j+1) + "</a></li> ";
+	out += "<li><a href='index.html?q=" + readsearchtermurl + "&page=" + (j + 1) + typefragment + exactfragment + "'>" + (j+1) + "</a></li> ";
 	}
 	}
 	out += "</ul></li>";
@@ -264,7 +264,7 @@ function myFunction(response) {
 	if (page == totalpages) {
 	out += "<li class='disabled'><a><span aria-hidden='true'><img src='images/nextInactive.png' width='16px' height='16px' alt='Next page' /></span><span class='sr-only'>Next page</span></a></li><li class='disabled'><a><span aria-hidden='true'><img src='images/lastInactive.png' width='16px' height='16px' alt='Final page' /></span><span class='sr-only'>Final page</span></a></li>";
 	} else {
-	out += "<li><a href='planning-search.html?q=" + readsearchtermurl + "&page=" + (parseInt(page,10) + 1) + typefragment + exactfragment + "'><span aria-hidden='true'><img src='images/nextActive.png' width='16px' height='16px' alt='Next page' /></span><span class='sr-only'>Next page</span></a></li><li><a href='planning-search.html?q=" + readsearchtermurl + "&page=" + totalpages + typefragment + exactfragment + "'><span aria-hidden='true'><img src='images/lastActive.png' width='16px' height='16px' alt='Final page' /></span><span class='sr-only'>Final page</span></a></li>";
+	out += "<li><a href='index.html?q=" + readsearchtermurl + "&page=" + (parseInt(page,10) + 1) + typefragment + exactfragment + "'><span aria-hidden='true'><img src='images/nextActive.png' width='16px' height='16px' alt='Next page' /></span><span class='sr-only'>Next page</span></a></li><li><a href='index.html?q=" + readsearchtermurl + "&page=" + totalpages + typefragment + exactfragment + "'><span aria-hidden='true'><img src='images/lastActive.png' width='16px' height='16px' alt='Final page' /></span><span class='sr-only'>Final page</span></a></li>";
 	}
 	out += "</ul></li>";
 	
@@ -310,8 +310,8 @@ $("#q").focus();
 // toggle the checkbox for exact phrase matches
 function checkboxtoggle() {
 	if (document.getElementById('checkboxexact').checked == true) {
-	window.location.href="planning-search.html?q=" + readsearchtermurl + "&page=1" + typefragment + "&exact=yes";
+	window.location.href="index.html?q=" + readsearchtermurl + "&page=1" + typefragment + "&exact=yes";
 	} else {
-	window.location.href="planning-search.html?q=" + readsearchtermurl + "&page=1" + typefragment;
+	window.location.href="index.html?q=" + readsearchtermurl + "&page=1" + typefragment;
 	}
 	}
