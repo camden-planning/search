@@ -1,0 +1,152 @@
+/* start: comp-pagination.less */
+
+    .pager {
+        margin: 10px 0 10px 6px;
+    }
+
+    .pager li ul {
+        display:inline-block;
+        margin:0;
+        padding:0
+    }
+
+    .pager .previous > a, .pager .previous > a:hover, .pager .previous > a:focus, .pager .previous > span {
+        background-color: #00019f
+    }
+
+    .pager .previous li.disabled > a, .pager .previous li.disabled > a:hover, .pager .previous li.disabled > a:focus, .pager .previous li.disabled > span {
+        background-color: #efefef;
+        color: #777;
+        cursor: not-allowed;
+        border:2px solid #6c6c6c;
+    }
+
+    .pager .next li.disabled > a, .pager .next li.disabled > a:hover, .pager .next li.disabled > a:focus, .pager .next li.disabled > span {
+        background-color: #efefef;
+        color: #777;
+        cursor: not-allowed;
+        border:2px solid #6c6c6c;
+    }
+
+    .pager ul {
+        margin-top:1px;
+        border:1px solid #ccc;
+        border-right: none;
+    }
+
+    .pager ul > li > a {
+        background-color: transparent;
+        border:none;
+        border-right:1px solid #ccc;
+        border-radius: 0px;
+        display: inline-block;
+        padding: 9px 19px;
+        margin-left:-6px;
+        color:#0000e9
+    }
+
+
+    .pager ul > li > a:hover {
+        background-color: transparent;
+        border:none;
+        border-right:1px solid #ccc;
+        border-radius: 0px;
+        text-decoration:underline
+    }
+
+    .pager ul > li > a:focus {
+        background-color: #ff9900;
+        border:none;
+        border-right:1px solid #ccc;
+        border-radius: 0px;
+        text-decoration:underline
+    }
+
+.pager li > a, .pager li > span, .pager li.next > ul > li > a, .pager li.next > ul > li > span, .pager li.previous > ul > li > a, .pager li.previous > ul > li > span {
+    background-color: transparent;
+    border: 2px solid #00019f;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 9px 18px;
+}
+
+.pager li > a:focus, .pager li.next > ul > li > a:focus, .pager li.previous > ul > li > a:focus  {
+    text-decoration: none;
+    border:2px solid #ff9900
+}
+
+.pager li > a:hover, .pager li.next > ul > li > a:hover, .pager li.previous > ul > li > a:hover {
+    text-decoration: none;
+    background-color: #2D389C;
+}
+
+.pager li.active {
+    color:#000;
+    text-decoration:none;
+    background-color:#ccc;
+    border:none;
+    border-right:1px solid #ccc;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 9px 19px;
+    margin-left:-6px;
+    font-weight:normal
+}
+
+.pager li.previous ul  {
+    float: left;;
+    display:inline-block;
+    border:none
+}
+
+.pager li.previous ul li  {
+    margin-right:5px
+}
+
+.pager li.next ul  {
+    float: right;
+    display:inline-block;
+    border:none
+}
+
+.pager li.next ul li  {
+   margin-left:10px;
+   float:left
+}
+
+
+.pager li.next > ul > li > a, .pager li.next > ul > li > span {
+    background-color:#00019f;
+    color:#fff;
+}
+
+.pager li.previous > ul > li > a, .pager li.previous > ul > li > span   {
+    background-color:#00019f;
+    color:#fff;
+}
+
+.pager li.next > ul > li > a, .pager li.next > ul > li > span {
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .pager li ul {
+        display:none;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+.pager li > a, .pager li > span, .pager li.next > ul > li > a, .pager li.next > ul > li > span, .pager li.previous > ul > li > a, .pager li.previous > ul > li > span {
+    border: 2px solid #00019f;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 9px 10px;
+}
+
+}
+
+
+/* end: comp-pagination.less */

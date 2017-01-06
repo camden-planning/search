@@ -1,0 +1,39 @@
+/* start: comp-appointments.less */
+
+    .appointments-container { margin:0; padding:0; }
+    .day-column { margin:0; display:inline-block; width:19.4%; padding:0; }
+    .day-column ul { list-style-type:none; margin:0; padding:0; }
+    .day-column ul li { font-weight:normal; margin:0 0px 5px 0; width:100%; text-align:center; background-color:#fff; }
+    .day-column ul li.date-heading { font-weight:bold; background-color:transparent; padding:10px; }
+    .day-column ul li.date-unavailable { background-color:#d0cdc7; padding:10px; }
+    .day-column ul li p { margin:0; padding:0 }
+
+  @media (max-width:992px) {
+
+    .day-column { width:100%; margin:0 15px 0 0; }
+
+  }
+
+
+  @media (max-width:768px) {
+
+    .day-column { width:100%; margin:0 10px 0 0; }    
+
+  }
+
+
+.appointments-container .radio-label {
+    display:inline-block;
+    font-weight:normal; width:100%; margin:0; padding:10px; text-align:center;  
+    cursor:pointer;
+}
+
+.appointments-container input[type="radio"]:checked + label {
+    background-color:#ffff25;
+    font-weight:bold;
+}
+
+.input_hidden { position: absolute; left: -9999px }
+
+
+/* end: comp-appointments.less */

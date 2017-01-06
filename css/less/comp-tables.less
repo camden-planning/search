@@ -1,0 +1,329 @@
+/* start: comp-tables.less */
+
+.no-more-tables table {
+	
+	margin-bottom:0px;
+	background-color:#fff;
+	width:100%;
+	margin-bottom:15px
+}
+
+.no-more-tables table,
+.no-more-tables thead,
+.no-more-tables tbody,
+.no-more-tables th,
+.no-more-tables td,
+.no-more-tables tr { 
+	vertical-align:top;
+	text-align:left;
+}
+
+.no-more-tables th, .no-more-tables tr { border:1px solid #ccc }
+
+table.tablesorter thead tr th.header.tablesorter-header.tablesorter-headerAsc, table.tablesorter thead tr th.header.tablesorter-header.tablesorter-headerDesc {
+    background-color: #8dbdd8;
+}
+
+.table thead tr th.header {
+    background-color: #e6eeee;
+    vertical-align:top;
+    font-weight:normal
+}
+
+table.tablesorter thead tr .headerSortDown {
+    background-image: url("../images/desc.gif"); 
+}
+
+table.tablesorter thead tr .headerSortUp {
+    background-image: url("../images/asc.gif");
+}
+
+
+table.tablesorter thead tr .header {
+    background-image: url("../images/bg.gif");
+    background-position: right 8px;
+    background-repeat: no-repeat; 
+    cursor: pointer;
+}
+
+table.tablesorter thead tr th, table.tablesorter tbody tr td { padding:5px }
+.tablesorter-header-inner { margin-right:15px }
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #e6eeee;
+    font-weight:normal;
+    padding:5px;
+}
+
+table.tablesorter tbody tr.normal-row td { 
+  background: #e6e6e6;
+}
+
+table.tablesorter tbody tr.alt-row td {
+  background: #fff;
+}
+
+
+/* table width resizing */
+
+.no-more-tables tr th.percentage { width:20% !important } 
+.table-data { padding:5px 0px; border:1px solid #ccc } 
+.table-data a { color:#0000e9 } 
+
+@media only screen and (min-width: 521px) { 
+
+/* start tablesorter styles */
+
+.tablesorter-scroller-reset { width: auto !important; } 
+.tablesorter-scroller { width:99%;  text-align: left }
+.tablesorter-scroller-header { width:100% !important }
+.tablesorter-scroller-header table.tablesorter { margin-bottom: 0; }
+.tablesorter-scroller-table { overflow-y: auto; margin-bottom:15px; overflow-x:hidden }
+.tablesorter-scroller-table table.tablesorter { margin-top: 0; width:100%!important; }
+.tablesorter-scroller-table .tablesorter-filter-row, .tablesorter-scroller-table tfoot { display: none; }
+.tablesorter-scroller-table table.tablesorter thead tr.tablesorter-headerRow * { line-height:0;height:0;border:none;background-image:none;padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;overflow:hidden; }
+
+}
+
+/* end tablesorter styles */
+
+@media only screen and (max-width: 820px) {
+
+	.dashboard-organisation .tablesorter-scroller-table, .dashboard-individual .tablesorter-scroller-table { overflow-y:none; display:block; height:100% !important; overflow-x:none }
+
+	.dashboard-individual .no-more-tables {
+		background-color:#fff;
+		border:none
+	}
+
+	.dashboard-organisation .no-more-tables thead, .dashboard-organisation .no-more-tables table, .dashboard-organisation .no-more-tables tbody, .dashboard-individual .no-more-tables thead, .dashboard-individual .no-more-tables table, .dashboard-individual .no-more-tables tbody {
+		padding:0px;
+		border:1px solid #fff;
+	}
+
+	.dashboard-organisation .no-more-tables table,
+	.dashboard-organisation .no-more-tables th,
+	.dashboard-organisation .no-more-tables td,
+	.dashboard-organisation .no-more-tables tr, 
+	.dashboard-individual .no-more-tables table,
+	.dashboard-individual .no-more-tables th,
+	.dashboard-individual .no-more-tables td,
+	.dashboard-individual .no-more-tables tr {
+		display: inline-block;
+		border:none;
+	}
+
+	.dashboard-organisation .no-more-tables tr, .dashboard-individual .no-more-tables tr {
+		background-color:#e6eeee; margin-bottom:10px; padding:5px; margin-left:5px; margin-right:5px; width:95%; padding-left:150px 
+	}
+
+	.dashboard-organisation .no-more-tables tr td, .dashboard-individual .no-more-tables tr td {
+		border-bottom:none;
+		width:100%
+	}
+	 
+	/* Hide table headers (but not display: none;, for accessibility) */ 
+	.dashboard-organisation .no-more-tables thead tr, .dashboard-individual .no-more-tables thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	 
+	.dashboard-organisation .no-more-tables td, .dashboard-individual .no-more-tables td {
+	/* Behave like a "row" */
+	border: none;
+	border-bottom: 1px solid #fff;
+	position: relative;
+	background-color:#e6eeee;
+	white-space: normal;
+	text-align:left
+	}
+	 
+	.dashboard-organisation .no-more-tables td:before, .dashboard-individual .no-more-tables td:before {
+	/* Now like a table header */
+	/* Top/left values mimic padding */
+		display:block;
+		white-space: nowrap;
+		font-weight: bold;
+		padding-left:0px;
+		margin-left:0px; 
+		position: relative
+	}
+
+	.dashboard-organisation .no-more-tables td:before, .dashboard-individual .no-more-tables td:before { content: attr(data-title); }
+	
+}
+
+@media only screen and (max-width: 620px) {
+
+.tablesorter-scroller-table { overflow-y:none; display:block; height:100% !important; overflow-x:none }
+
+table.tablesorter tbody tr.normal-row td { 
+  background: #e6eeee;
+}
+
+table.tablesorter tbody tr.alt-row td {
+  background: #e6eeee;
+}
+
+/* Force table to not be like tables anymore */
+
+.no-more-tables {
+	
+	background-color:#fff;
+	border:none;
+	margin-bottom:15px
+
+}
+
+.no-more-tables table {
+	
+	margin-bottom:0px;
+}
+
+
+.no-more-tables thead, .no-more-tables table, .no-more-tables tbody {
+	padding:0px;
+	border:1px solid #fff;
+}
+
+.no-more-tables table {
+	padding-top:5px
+}
+
+.no-more-tables table,
+.no-more-tables th,
+.no-more-tables td,
+.no-more-tables tr {
+	display: inline-block;
+	border:none;
+}
+
+.no-more-tables tr {
+	background-color:#e6eeee; margin-bottom:10px; padding:5px; margin-left:5px; margin-right:5px; width:95%; padding-left:0px 
+}
+
+.no-more-tables tr td {
+	border-bottom:none;
+	width:100%
+}
+ 
+/* Hide table headers (but not display: none;, for accessibility) */ 
+.no-more-tables thead tr {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+ 
+.no-more-tables td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #fff;
+position: relative;
+background-color:#e6eeee;
+white-space: normal;
+text-align:left
+}
+ 
+.no-more-tables td:before {
+	display:block;
+	white-space: normal;
+	font-weight: bold;
+	padding-left:0px;
+	margin-left:0px; 
+	position: relative;
+	width:100%
+} 
+ 
+.table-striped > tbody > tr:nth-child(2n+1) {
+    background-color:#e6eeee;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none;
+}
+
+ 
+/* Label the data */
+.no-more-tables td:before { content: attr(data-title); }
+
+
+}
+
+
+
+@media only screen and (max-width: 350px) {
+
+
+/* Force table to not be like tables anymore */
+
+.no-more-tables {
+	
+	background-color:#dfeef5;
+	margin-bottom:15px
+
+}
+
+.no-more-tables table {
+	
+	margin-bottom:0px;
+}
+
+.dashboard-organisation .no-more-tables thead, .dashboard-individual .no-more-tables table, .no-more-tables tbody { 
+	padding:0px;
+	border:none;
+}
+
+.dashboard-organisation .no-more-tables tr, .dashboard-individual .no-more-tables tr, .no-more-tables tr {
+	padding-left:0px;
+	margin-top:5px;
+	margin-bottom:5px
+}
+
+.no-more-tables tr td, .dashboard-organisation .no-more-tables tr td, .dashboard-individual .no-more-tables tr td {
+	border-bottom:none;
+	width:100%;
+	padding-left:5px
+}
+ 
+/* Hide table headers (but not display: none;, for accessibility) */ 
+.no-more-tables thead tr, .dashboard-organisation .no-more-tables thead tr, .dashboard-individual .no-more-tables thead tr {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+ 
+.no-more-tables td, .dashboard-organisation .no-more-tables td, .dashboard-individual .no-more-tables td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #fff;
+position: relative;
+}
+ 
+.no-more-tables td:before, .dashboard-organisation .no-more-tables td:before, .dashboard-individual .no-more-tables td:before {
+/* Now like a table header */
+/* Top/left values mimic padding */
+	display:block;
+	padding-left:0px;
+	margin-left:0px; 
+	position: relative;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) {
+    background-color: #e6eeee;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none;
+}
+
+.no-more-tables td:before {
+
+	width:100%
+}
+
+
+
+}
+
+/* end: comp-tables.less */

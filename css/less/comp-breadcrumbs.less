@@ -1,0 +1,26 @@
+/* start: comp-breadcrumbs.less */
+
+	.breadcrumb {
+		background-color:transparent;
+	    border-radius: 0px;
+	    list-style: outside none none;
+	    margin-bottom: 10px;
+	    padding:0px 15px 8px 0px;
+	}
+
+	.breadcrumb > li + li:before { color:#000 }
+
+	.breadcrumb li { padding:2px 0px; display:inline }
+
+	.breadcrumb li a, .breadcrumb li.active {
+		font-size:0.75em;
+		color:#000
+	}
+
+	.breadcrumb a { padding:0px }
+	.breadcrumb a:focus { background-color:#ffbf47; border-color:2px solid #ffbf47 }
+ 
+	.homeIcon a img { float:left; position:relative; height:20px; top:0px  }
+	.homeIcon a:focus img { float:left; position:relative; height:20px; top:0px; background-color:#ffbf47  }
+
+/* end: comp-breadcrumbs.less */

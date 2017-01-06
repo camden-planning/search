@@ -1,0 +1,129 @@
+/* start: template-leftnav.less */
+
+
+.nav li a:focus { background-color:#ffbf47; outline:2px solid #ffbf47 }  
+
+.navbar {
+    min-height: 38px;
+    margin-bottom:15px
+}
+
+.navbar-header { background-color:#333; width:100%; color:#fff }
+
+.navbar-header a:focus { outline:none }
+
+.navbar-default .navbar-nav > li > a {
+	color:#000;
+    display:block;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #FF9900;
+    color: #000;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #333
+}
+
+.navbar-default .navbar-brand {
+    color: #fff !important;
+    cursor:default
+}
+
+.nav > li {
+    border: 1px solid #ccc;
+    display: block;
+    position: relative;
+    width:100%
+}
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-left: 0px;
+    margin-right: 0px
+}
+
+.navbar .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+    font-size: 1em;
+    color:#000;
+    line-height:12px
+}
+
+.arrow-down {
+    background-image: url("../images/arrow-down.png");
+    width:16px;
+    height:16px
+} 
+
+.arrow-up {
+    background-image: url("../images/arrow-up.png");
+    width:16px;
+    height:16px
+} 
+
+.navbar-toggle {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 15px;
+    margin-top: 8px;
+    padding:0px;
+    position: relative;
+}
+
+.navbar-default .navbar-toggle {
+    border-color:#333;
+}
+
+li.nav-break { height:3px; background-color:#ccc }
+
+@media (min-width:992px) {
+
+	.navbar-brand {
+		font-size:1em
+	}
+
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	    margin-left: 0px;
+	}
+
+	.navbar-nav > li, .navbar-nav > li.active {
+	    float: left;
+	    width: 100%;
+	}
+
+	.navbar-collapse {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+
+	.navbar-default {
+	    background-color: #fff;
+	    border-color: #e7e7e7;
+	}
+
+	.navbar {
+	    border-radius:0px;
+	}
+
+	.navbar .container-fluid {
+	    padding-left: 0px;
+	    padding-right: 0px
+	}
+
+}
+
+/* end: template-leftnav.less */ 

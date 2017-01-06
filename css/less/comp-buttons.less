@@ -1,0 +1,98 @@
+/* start: comp-buttons.less */
+
+	.btn { font-size:1em; margin-bottom:10px; white-space:normal } 
+
+	.btn-default {
+		color: #00019F;
+		background-color: #ccc;
+    	border:2px solid #00019F
+	}
+
+	.btn-default:hover {
+	  	color: #2D389C;
+	  	background-color: #E6E6E6;  
+	  	border: 2px solid #00019f
+	}
+
+	.btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	  	color: #00019F;
+	  	background-color: #E6E6E6;
+    	border:2px solid #ff9900
+	}
+
+	.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default.focus[disabled], fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default.active[disabled], fieldset[disabled] .btn-default.active {
+		color: #6C6C6C;
+		background-color: #EFEFEF;
+    	border:2px solid #6C6C6C
+	}
+
+
+	.btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover {
+		color: #6C6C6C;
+		background-color: #EFEFEF;
+	}
+
+
+	.btn-primary { 
+		color: #fff;
+		background-color: #00019F;
+		padding-left:25px;
+		padding-right:25px;
+		border:2px solid #00019F
+	}
+
+	.btn-primary:hover {
+    	background-color: #2D389C;
+    	color: #fff;
+		padding-left:25px;
+		padding-right:25px; 
+	}
+
+	.btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    	background-color: #2D389C;
+    	color: #fff;
+		padding-left:25px;
+		padding-right:25px;
+		border:2px solid #ff9900
+	}
+
+	.btn-cancel { 
+		color: #00019F;
+		background-color: transparent;
+		padding-left:25px;
+		padding-right:25px;
+		border:2px solid transparent
+	}
+
+	.btn-cancel:hover {
+    	background-color: transparent;
+    	color: #2D389C;
+		padding-left:25px;
+		padding-right:25px; 
+	}
+
+	.btn-cancel:focus, .btn-cancel.focus, .btn-cancel:active, .btn-cancel.active {
+    	background-color: #ff9900;
+    	color: #00019F;
+    	border-radius:none;
+		padding-left:25px;
+		padding-right:25px;
+		border:2px solid #ff9900
+	}
+
+	.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary.focus[disabled], fieldset[disabled] .btn-primary.focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active {
+		color: #6C6C6C;
+		background-color: #EFEFEF;
+    	border:2px solid #6C6C6C;
+    	cursor: not-allowed;
+	}
+
+
+	@media (max-width:768px) {
+
+		.btn { width: 100% }
+
+	}
+
+
+/* end: comp-buttons.less */
